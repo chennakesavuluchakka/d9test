@@ -51,6 +51,11 @@
             "cweagans/composer-patches": true
         }
     },
+    "scripts": {
+        "post-drupal-scaffold-cmd": [
+            "patch -p1 < patches/htaccess.patch"
+        ]
+    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
