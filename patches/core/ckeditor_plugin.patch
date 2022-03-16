@@ -1,0 +1,13 @@
+diff --git a/core/modules/ckeditor/js/plugins/drupallink/plugin.js b/core/modules/ckeditor/js/plugins/drupallink/plugin.js
+index b06b2767..0ac0a2ef 100644
+--- a/core/modules/ckeditor/js/plugins/drupallink/plugin.js
++++ b/core/modules/ckeditor/js/plugins/drupallink/plugin.js
+@@ -128,7 +128,7 @@
+               var range = selection.getRanges(1)[0];
+
+               if (range.collapsed) {
+-                var text = new CKEDITOR.dom.text(returnValues.attributes.href.replace(/^mailto:/, ''), editor.document);
++                var text = new CKEDITOR.dom.text(returnValues.attributes.href.replace(/^mailto:/, '').replace(/^tel:/, ''), editor.document);
+                 range.insertNode(text);
+                 range.selectNodeContents(text);
+               }

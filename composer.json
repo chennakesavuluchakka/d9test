@@ -92,6 +92,11 @@
             ]
         },
         "enable-patching": true,
+        "patches": {
+            "drupal/core": {
+                "Tel Remover as needed": "./patches/core/ckeditor_plugin.patch"
+            }
+        },
         "drupal-core-project-message": {
             "include-keys": [
                 "homepage",

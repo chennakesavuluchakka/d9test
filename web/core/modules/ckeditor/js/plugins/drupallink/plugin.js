@@ -128,7 +128,7 @@
               var range = selection.getRanges(1)[0];
 
               if (range.collapsed) {
-                var text = new CKEDITOR.dom.text(returnValues.attributes.href.replace(/^mailto:/, ''), editor.document);
+                var text = new CKEDITOR.dom.text(returnValues.attributes.href.replace(/^mailto:/, '').replace(/^tel:/, ''), editor.document);
                 range.insertNode(text);
                 range.selectNodeContents(text);
               }
