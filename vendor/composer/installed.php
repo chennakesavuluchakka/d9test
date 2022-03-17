@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'bcb8ba0e4b8ef81b174147f6ae6aca1f2fe88cf4',
+        'reference' => '41032e147b978e866ec6207f1634a08331f9897b',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -756,6 +756,15 @@
                 0 => '9.3.7',
             ),
         ),
+        'drupal/metatag' => array(
+            'pretty_version' => '1.19.0',
+            'version' => '1.19.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/metatag',
+            'aliases' => array(),
+            'reference' => '8.x-1.19',
+            'dev_requirement' => false,
+        ),
         'drupal/migrate' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -840,7 +849,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'bcb8ba0e4b8ef81b174147f6ae6aca1f2fe88cf4',
+            'reference' => '41032e147b978e866ec6207f1634a08331f9897b',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -932,6 +941,15 @@
             'replaced' => array(
                 0 => '9.3.7',
             ),
+        ),
+        'drupal/token' => array(
+            'pretty_version' => '1.10.0',
+            'version' => '1.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/token',
+            'aliases' => array(),
+            'reference' => '8.x-1.10',
+            'dev_requirement' => false,
         ),
         'drupal/toolbar' => array(
             'dev_requirement' => false,
