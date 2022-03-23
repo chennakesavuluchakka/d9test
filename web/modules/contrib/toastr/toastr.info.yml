@@ -1,0 +1,10 @@
+name: Toastr
+description: Toastr.js integration API
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-05-22
+version: '8.x-1.0'
+project: 'toastr'
+datestamp: 1590160102

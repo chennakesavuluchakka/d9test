@@ -1,0 +1,19 @@
+{
+  "name": "drupal/toastr",
+  "type": "drupal-module",
+  "description": "Will show Drupal status messages with toastr js library.",
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/toastr",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Artem Dmitriiev (a.dmitriiev)",
+      "homepage": "https://www.drupal.org/u/a.dmitriiev",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/issues/toastr",
+    "source": "http://cgit.drupalcode.org/toastr"
+  }
+}
