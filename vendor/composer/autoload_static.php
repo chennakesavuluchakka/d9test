@@ -9,8 +9,8 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
@@ -42,6 +42,7 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
     );
 
@@ -75,7 +76,9 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Contracts\\HttpClient\\' => 29,
             'Symfony\\Contracts\\EventDispatcher\\' => 34,
+            'Symfony\\Contracts\\Cache\\' => 24,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Validator\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
@@ -88,11 +91,13 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
+            'Symfony\\Component\\ExpressionLanguage\\' => 37,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Symfony\\Component\\Cache\\' => 24,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
             'SelfUpdate\\' => 11,
@@ -109,14 +114,19 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+            'PhpDocReader\\' => 13,
         ),
         'M' => 
         array (
+            'MutableTypedData\\Test\\' => 22,
+            'MutableTypedData\\Fixtures\\' => 26,
+            'MutableTypedData\\' => 17,
             'Masterminds\\' => 12,
         ),
         'L' => 
         array (
             'League\\Container\\' => 17,
+            'Laravel\\SerializableClosure\\' => 28,
             'Laminas\\Stdlib\\' => 15,
             'Laminas\\Feed\\' => 13,
             'Laminas\\Escaper\\' => 16,
@@ -125,6 +135,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         'K' => 
         array (
             'Kint\\' => 5,
+        ),
+        'I' => 
+        array (
+            'Invoker\\' => 8,
         ),
         'G' => 
         array (
@@ -147,6 +161,7 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
             'DrupalCodeGenerator\\' => 20,
+            'DrupalCodeBuilder\\' => 18,
             'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Common\\Lexer\\' => 22,
@@ -156,6 +171,7 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
+            'DI\\' => 3,
         ),
         'C' => 
         array (
@@ -168,6 +184,7 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
             'Consolidation\\AnnotatedCommand\\' => 31,
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
+            'CaseConverter\\' => 14,
         ),
         'A' => 
         array (
@@ -248,9 +265,17 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
+        'Symfony\\Contracts\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/cache-contracts',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\VarExporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-exporter',
         ),
         'Symfony\\Component\\VarDumper\\' => 
         array (
@@ -300,6 +325,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
+        'Symfony\\Component\\ExpressionLanguage\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/expression-language',
+        ),
         'Symfony\\Component\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
@@ -319,6 +348,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Symfony\\Component\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/cache',
         ),
         'Symfony\\Cmf\\Component\\Routing\\' => 
         array (
@@ -361,6 +394,22 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PhpDocReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
+        ),
+        'MutableTypedData\\Test\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/joachim-n/mutable-typed-data/Test/src',
+        ),
+        'MutableTypedData\\Fixtures\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/joachim-n/mutable-typed-data/Test/fixtures',
+        ),
+        'MutableTypedData\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/joachim-n/mutable-typed-data',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -368,6 +417,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'Laravel\\SerializableClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
         'Laminas\\Stdlib\\' => 
         array (
@@ -388,6 +441,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         'Kint\\' => 
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -441,6 +498,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         array (
             0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
         ),
+        'DrupalCodeBuilder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal-code-builder/drupal-code-builder',
+        ),
         'Doctrine\\Persistence\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
@@ -480,6 +541,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
         ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src',
+        ),
         'Consolidation\\SiteProcess\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/site-process/src',
@@ -515,6 +580,10 @@ class ComposerStaticInit5d8e9a4de0bbc5db67009c5ea82d1886
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
+        'CaseConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/joachim-n/case-converter',
         ),
         'Asm89\\Stack\\' => 
         array (

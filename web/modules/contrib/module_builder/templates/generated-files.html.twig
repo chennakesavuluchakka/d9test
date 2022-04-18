@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a generated_files.
+ *
+ * Available variables:
+ * - filename_list: List of file checkbox elements
+ * - code: list of file code textarea elements
+ *
+ * @ingroup themeable
+ */
+#}
+<section class="generated-files">
+
+  <ul>
+    {% for filename in filename_list %}
+      <li>{{ filename }}</li>
+    {% endfor %}
+  </ul>
+
+  <div>
+    {% for file_code in code %}
+      <div class="generated-code">
+        {{ file_code }}
+      </div>
+    {% endfor %}
+
+  </div>
+
+</section>

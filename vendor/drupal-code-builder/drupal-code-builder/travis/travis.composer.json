@@ -1,0 +1,34 @@
+{
+  "name": "local/travis-drupal",
+  "description": "Drupal project into which DCB is installed from the repo in Travis",
+  "type": "project",
+  "repositories": [
+      {
+        "type": "path",
+        "url": "/home/travis/build/drupal-code-builder/drupal-code-builder"
+      }
+  ],
+  "require": {
+      "composer/installers": "*",
+      "drupal-code-builder/drupal-code-builder": "*",
+      "drupal/core-composer-scaffold": "^9.3",
+      "drupal/core-dev": "^9.3",
+      "drupal/core-recommended": "^9.3",
+      "phpunit/phpunit": "^9"
+  },
+  "conflict": {
+      "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+      "drupal-scaffold": {
+          "locations": {
+              "web-root": "web/"
+          }
+      },
+      "installer-paths": {
+          "web/core": ["type:drupal-core"]
+      }
+  }
+}

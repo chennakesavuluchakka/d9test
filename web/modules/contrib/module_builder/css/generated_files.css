@@ -1,0 +1,24 @@
+/**
+ * Layout for the generates_files form element.
+ */
+.generated-files {
+  display: grid;
+  grid-template-columns: auto 80ch;
+}
+
+.generated-files ul {
+  padding: 0;
+  margin: 0;
+}
+
+.generated-files li {
+  display: flex;
+}
+
+.generated-files .form-item {
+  margin: 0.25em 0;
+}
+
+.generated-files li label {
+  flex-grow: 1;
+}

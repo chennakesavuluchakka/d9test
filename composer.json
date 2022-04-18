@@ -36,6 +36,9 @@
         "drupal/core-recommended": "^9.3",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/metatag": "^1.19",
+        "drupal/module_builder": "^3.22",
+        "drupal/paragraphs": "1.x-dev@dev",
+        "drupal/redirect_after_login": "^2.7",
         "drupal/toastr": "^1.0",
         "drush/drush": "^11.0",
         "kenwheeler.github.io/slick": "^1.8"
@@ -98,6 +101,12 @@
         "patches": {
             "drupal/core": {
                 "Tel Remover as needed": "./patches/core/ckeditor_plugin.patch"
+            },
+            "drupal/toastr": {
+                "Messages returned by AJAX are not showing up": "https://www.drupal.org/files/issues/2022-03-29/ajax-messages-3272019-6.patch"
+            },
+            "drupal/paragraphs": {
+                "Use dependency injection instead of Drupal:: global object": "https://www.drupal.org/files/issues/2022-04-01/dependency-injection-coding-standards-3091424-10.patch"
             }
         },
         "drupal-core-project-message": {

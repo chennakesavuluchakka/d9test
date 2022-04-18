@@ -6,7 +6,6 @@
 function toastr_page_attachments(array &$attachments) {
   // Get all the Drupal status messages, so they do not appear anywhere else.
   $messages = \Drupal::messenger()->deleteAll();
-  if (!empty($messages)) {
     // Get toastr configs.
     $config = \Drupal::config('toastr.settings');
     // Get default settings.
@@ -20,5 +19,4 @@ function toastr_page_attachments(array &$attachments) {
     $attachments['#attached']['drupalSettings']['toastr']['settings'] = $settings;
     // Unconditionally attach an asset to the page.
     $attachments['#attached']['library'][] = 'toastr/messages';
-  }
 }

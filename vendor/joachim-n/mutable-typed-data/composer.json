@@ -1,0 +1,22 @@
+{
+  "name": "joachim-n/mutable-typed-data",
+  "type": "library",
+  "description": "Mutable typed data system",
+  "license": "GPL-2.0+",
+  "require": {
+    "php": "^7.0 || ^8.0",
+    "symfony/expression-language": "~3.4.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.2",
+    "phpunit/phpunit": "^9",
+    "phpspec/prophecy-phpunit": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MutableTypedData\\": "",
+      "MutableTypedData\\Test\\": "Test/src",
+      "MutableTypedData\\Fixtures\\": "Test/fixtures"
+    }
+  }
+}

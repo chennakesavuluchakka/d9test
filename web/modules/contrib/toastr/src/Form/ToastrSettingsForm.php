@@ -6,6 +6,8 @@ namespace Drupal\toastr\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\MessageCommand;
 
 /**
  * Class ToastrSettingsForm
@@ -97,6 +99,15 @@ class ToastrSettingsForm extends ConfigFormBase {
         'toast-bottom-full-width' => $this->t('Bottom Full Width'),
       ],
       '#default_value' => $this->getConfigValue('toastr_toast_position'),
+    ];
+
+    $form['submit'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Import'),
+      '#button_type' => 'primary',
+      '#ajax' => [
+        'callback' => '::addmoreCallback',
+      ],
     ];
 
     $form['toastr_toast_type'] = [
@@ -219,7 +230,14 @@ class ToastrSettingsForm extends ConfigFormBase {
       '#default_value' => $this->getConfigValue('toastr_leave_errors'),
       '#return_value' => 1,
     ];
+
     return parent::buildForm($form, $form_state);
+  }
+
+  public function addmoreCallback(array &$form, FormStateInterface $form_state) {
+    $response = new AjaxResponse();
+    $response->addCommand(new MessageCommand('test message hi'));
+    return $response;
   }
 
   /**

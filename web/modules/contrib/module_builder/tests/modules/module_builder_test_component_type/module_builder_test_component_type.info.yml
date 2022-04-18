@@ -1,0 +1,13 @@
+name: 'Module Builder Test Component Type'
+type: module
+description: Test module to provide a mock DCB Generate task for functional tests.
+package: Testing
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - module_builder
+
+# Information added by Drupal.org packaging script on 2021-12-17
+version: '8.x-3.22'
+project: 'module_builder'
+datestamp: 1639775710

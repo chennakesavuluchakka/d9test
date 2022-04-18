@@ -17,4 +17,3 @@ messages:
   dependencies:
     - core/drupalSettings
     - toastr/core
-    - core/jquery.once
